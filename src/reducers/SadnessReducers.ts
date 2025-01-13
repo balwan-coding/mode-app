@@ -1,7 +1,7 @@
 import { AnyAction } from "redux";
 import { Moment } from "../store";
-import { SAD_BUTTON_CLICKED_ACTIONS } from "../actions";
 import { produce } from "immer";
+import { SAD_BUTTON_CLICKED_ACTIONS } from "../actions/mode-actions";
 
 export type SadState = {
   sadMoments: Moment[];

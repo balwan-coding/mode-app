@@ -1,22 +1,21 @@
-import { Moment } from "./store";
+import { ActionCreator } from "./index.ts";
+import { Moment } from "../store.ts";
 
 export const HAPPY_BUTTON_CLICKED_ACTIONS = "happy button clicked";
 export const SAD_BUTTON_CLICKED_ACTIONS = "SAD button clicked";
 
-type ActionCreator<T> = (...args: any) => { type: string; payload: T };
-
 export const happyButtonClickd: ActionCreator<Moment> = (
-  count: number,
+  intensity: number,
   when: Date
 ) => ({
   type: HAPPY_BUTTON_CLICKED_ACTIONS,
-  payload: { intensity: count, when },
+  payload: { intensity, when },
 });
 
 export const sadButtonClickd: ActionCreator<Moment> = (
-  count: number,
+  intensity: number,
   when: Date
 ) => ({
   type: SAD_BUTTON_CLICKED_ACTIONS,
-  payload: { intensity: count, when },
+  payload: { intensity, when },
 });

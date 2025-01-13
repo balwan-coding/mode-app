@@ -3,6 +3,7 @@ import SadTracker from "./SadTracker";
 import HappyIncrement from "./HappyIncrement";
 import SadIncrement from "./SadIncrement";
 import Resetbtn from "./Resetbtn";
+import ProductListPage from "./ProductListPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <SadIncrement />
       </div>
       <Resetbtn />
+      <ProductListPage />
     </div>
   );
 }

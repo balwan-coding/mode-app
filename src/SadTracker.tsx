@@ -1,6 +1,6 @@
 import { FC, memo } from "react";
 import { useSelector } from "react-redux";
-import { sadMomentsSeloector } from "./selectors";
+import { sadMomentsSeloector } from "./selectirs/mod-selectors";
 
 type SadTrackerProps = {};
 
@@ -9,7 +9,10 @@ const SadTracker: FC<SadTrackerProps> = () => {
   return (
     <div className="flex flex-col gap-5 m-2 ">
       {sadMoments.map((m) => (
-        <div key={m.when} className="p-3 text-white bg-blue-600 rounded-md">
+        <div
+          key={m.when.toISOString()}
+          className="p-3 text-white bg-blue-600 rounded-md"
+        >
           Sadness Intensity: {m.intensity} , when: {m.when.toISOString()}
         </div>
       ))}

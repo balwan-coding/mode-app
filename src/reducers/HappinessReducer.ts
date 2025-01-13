@@ -1,7 +1,7 @@
 import { AnyAction } from "redux";
-import { HAPPY_BUTTON_CLICKED_ACTIONS } from "../actions";
 import { Moment } from "../store";
 import { produce } from "immer";
+import { HAPPY_BUTTON_CLICKED_ACTIONS } from "../actions/mode-actions";
 
 export type HappyState = {
   happyMoments: Moment[];

@@ -1,6 +1,6 @@
 import { FC, memo, useState } from "react";
 import { useDispatch } from "react-redux";
-import { sadButtonClickd } from "./actions";
+import { sadButtonClickd } from "./actions/mode-actions";
 
 type SadIncrementProps = {};
 
